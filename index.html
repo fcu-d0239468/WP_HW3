@@ -1,10 +1,32 @@
-<!DOCTYPE HTML>
+<doctype>
 <html>
 	<head>
-		<meta charset="utf-8">
-		<title>自製Uber首頁</title>
+	 	<meta charset="utf-8">
+		<title>hhhh</title>
+		<style>
+			.buttom{font-size:1500%;
+			height:50%;
+			width:100%;}			
+		</style>
+		<script>
+			function celcius()
+				{var celcius,fehrenheit;
+				celcius=prompt("請輸入攝氏℃");
+				fehrenheit=9*celcius/5+32;
+				alert("fehrenheit:"+fehrenheit+"℉\ncelcius:"+celcius+"℃");
+				}
+			function fehrenheit()
+				{var celcius,fehrenheit;
+				fehrenheit=prompt("請輸入華氏℉");
+				celcius=(fehrenheit-32)*5/9;
+				alert("fehrenheit:"+fehrenheit+"℉\ncelcius:"+celcius+"℃");
+				}
+		</script>
 	</head>
-	<body>
-		<p>待建置</p>
+	<body class="full-height">
+		
+		<button class="buttom" style="background-color:gold;" onclick="celcius()"><b>攝氏℃轉華氏℉</b></button>
+		<button class="buttom" style="background-color:sandybrown;" onclick="fehrenheit()"><b>華氏℉轉攝氏℃</b></button>
+		
 	</body>
 </html>
